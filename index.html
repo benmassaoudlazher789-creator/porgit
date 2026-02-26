@@ -5,107 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/639/639394.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
+    
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <img src="Assets/logo.jpg" alt="signature" width="150">
+   
+           <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#work">Work</a></li>
+             <li><a href="#resume">Resume</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
         </nav>
     </header>
 
-
-    <main>
-
-        <section id="home">
+   
+    <section id="home">
+        <div class="hero">
             <h1>Welcome to My Portfolio</h1>
-            <p>This is my personal portfolio website created using HTML semantic tags.</p>
+            <p>I'm a creative professional passionate about web development.</p>
+            <a href="#work" class="btn">View My Work</a>
+        </div>
+    </section>
 
+   
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! I'm a passionate web developer with expertise in creating modern, responsive websites. I love turning ideas into reality through code and design.</p>
+            <p>With a strong foundation in HTML, CSS, and JavaScript, I strive to build clean and user-friendly web experiences.</p>
+            
+          
+        </div>
+    </section>
 
+  
+    <section id="work">
+        <h2>My Work</h2>
+        <div class="work-grid">
+            <article class="project">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+            </article>
+            <article class="project">
+                <h3>Project 2</h3>
+                <p>An e-commerce platform with modern design principles.</p>
+            </article>
+            <article class="project">
+                <h3>Project 3</h3>
+                <p>A personal blog with content management capabilities.</p>
+            </article>
+            <article class="project">
+                <h3>Project 4</h3>
+                <p>A mobile-first landing page for a startup.</p>
+            </article>
+        </div>
+        
+       
+        <div class="video-container">
+            <video controls width="560" height="315">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </section>
 
-
-        </section>
-
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a web developer passionate about creating websites.</p>
-
-
-            <h3>My Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Database</li>
-            </ul>
-        </section>
-
-
-        <section id="work">
-            <h2>My Work</h2>
-
-
-
-        </section>
-
-
-        <section id="resume">
-            <h2>Resume</h2>
-
-           
-            <table border="1">
+   
+    <section id="resume">
+        <h2>My Resume</h2>
+        
+       
+        <table>
+            <thead>
                 <tr>
                     <th>Year</th>
-                    <th>Education</th>
+                    <th>Position</th>
+                    <th>Company</th>
+                    <th>Description</th>
                 </tr>
-
+            </thead>
+            <tbody>
                 <tr>
-                    <td>2022</td>
-                    <td>Bachelor Degree</td>
+                    <td>2020 - Present</td>
+                    <td>Web Developer</td>
+                    <td>Tech Company</td>
+                    <td>Developing and maintaining web applications</td>
                 </tr>
-
                 <tr>
-                    <td>2024</td>
-                    <td>Web Development Training</td>
+                    <td>2018 - 2020</td>
+                    <td>Frontend Developer</td>
+                    <td>Digital Agency</td>
+                    <td>Creating responsive websites for clients</td>
                 </tr>
-            </table>
+                <tr>
+                    <td>2016 - 2018</td>
+                    <td>Junior Developer</td>
+                    <td>Startup Inc</td>
+                    <td>Assisting with code implementation and testing</td>
+                </tr>
+            </tbody>
+        </table>
 
-        </section>
+      
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript / ES6+</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </section>
 
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="form-group">
+                <label for="service">Service Interested In:</label>
+                <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="ui-design">UI/UX Design</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-
-         
-            <form>
-                <label>Name:</label><br>
-                <input type="text" name="name"><br><br>
-
-                <label>Email:</label><br>
-                <input type="email" name="email"><br><br>
-
-                <label>Message:</label><br>
-                <textarea name="message"></textarea><br><br>
-
-                <input type="submit" value="Send">
-            </form>
-
-        </section>
-
-    </main>
-
-
+  
     <footer>
-        <p>© 2026 My Portfolio</p>
+        <div class="footer-content">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p>Follow me on social media</p>
+        </div>
     </footer>
 
 </body>
