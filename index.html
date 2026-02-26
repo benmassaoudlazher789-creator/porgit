@@ -1,274 +1,186 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - HTML Only</title>
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/639/639394.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
-            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-
-    <hr>
-
     
-    <section id="home" class="home-section">
-        <h1 class="main-title">Bienvenue sur mon Portfolio</h1>
-        <p class="home-text">Je suis un développeur web passionné</p>
+    <header>
+        <nav>
+            <img src="Assets/logos.jpg" alt="signature" width="150">
+   
+           <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#work">Work</a></li>
+             <li><a href="#resume">Resume</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+
+   
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a creative professional passionate about web development.</p>
+            <a href="#work" class="btn">View My Work</a>
+        </div>
     </section>
 
-    <hr>
-
-    
-    <section id="about" class="about-section">
-        <h2 class="section-title">À propos de moi</h2>
-        
+   
+    <section id="about">
+        <h2>About Me</h2>
         <div class="about-content">
-            <h3 class="subtitle">Qui suis-je ?</h3>
-            <p class="about-text">Je m'appelle Lazher, j'ai 25 ans et je suis développeur web depuis 3 ans.</p>
+            <p>Hello! I'm a passionate web developer with expertise in creating modern, responsive websites. I love turning ideas into reality through code and design.</p>
+            <p>With a strong foundation in HTML, CSS, and JavaScript, I strive to build clean and user-friendly web experiences.</p>
             
-           
-            <h4 class="skills-title">Mes compétences :</h4>
-            <ul class="skills-list">
-                <li class="skill-item">HTML5</li>
-                <li class="skill-item">CSS3</li>
-                <li class="skill-item">JavaScript</li>
-                <li class="skill-item">React</li>
-                <li class="skill-item">Node.js</li>
+          
+        </div>
+    </section>
+
+  
+    <section id="work">
+        <h2>My Work</h2>
+        <div class="work-grid">
+            <article class="project">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+            </article>
+            <article class="project">
+                <h3>Project 2</h3>
+                <p>An e-commerce platform with modern design principles.</p>
+            </article>
+            <article class="project">
+                <h3>Project 3</h3>
+                <p>A personal blog with content management capabilities.</p>
+            </article>
+            <article class="project">
+                <h3>Project 4</h3>
+                <p>A mobile-first landing page for a startup.</p>
+            </article>
+        </div>
+        
+       
+        <div class="video-container">
+            <video controls width="560" height="315">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </section>
+
+   
+    <section id="resume">
+        <h2>My Resume</h2>
+        
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Position</th>
+                    <th>Company</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020 - Present</td>
+                    <td>Web Developer</td>
+                    <td>Tech Company</td>
+                    <td>Developing and maintaining web applications</td>
+                </tr>
+                <tr>
+                    <td>2018 - 2020</td>
+                    <td>Frontend Developer</td>
+                    <td>Digital Agency</td>
+                    <td>Creating responsive websites for clients</td>
+                </tr>
+                <tr>
+                    <td>2016 - 2018</td>
+                    <td>Junior Developer</td>
+                    <td>Startup Inc</td>
+                    <td>Assisting with code implementation and testing</td>
+                </tr>
+            </tbody>
+        </table>
+
+      
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript / ES6+</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
             </ul>
         </div>
     </section>
 
-    <hr>
-
     
-    <section id="work" class="work-section">
-        <h2 class="section-title">Mes projets</h2>
-        
-        <div class="projects-container">
-           
-            <article class="work-card">
-                <h3 class="project-title">Site e-commerce</h3>
-                <p class="project-description">Création d'un site de vente en ligne avec panier d'achat.</p>
-                <a href="#projet1" class="project-link local-link">Voir le projet</a>
-            </article>
-            
-           
-            <article class="work-card">
-                <h3 class="project-title">Application météo</h3>
-                <p class="project-description">Application qui affiche la météo en temps réel.</p>
-                <a href="#projet2" class="project-link local-link">Voir le projet</a>
-            </article>
-            
-          
-            <article class="work-card">
-                <h3 class="project-title">Blog personnel</h3>
-                <p class="project-description">Blog avec articles et système de commentaires.</p>
-                <a href="#projet3" class="project-link local-link">Voir le projet</a>
-            </article>
-        </div>
-
-        
-        <h3 class="table-title">Tableau des compétences</h3>
-        <table class="skills-table" border="1">
-            <thead>
-                <tr>
-                    <th class="table-header">Technologie</th>
-                    <th class="table-header">Niveau</th>
-                    <th class="table-header">Années d'expérience</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-row">
-                    <td class="table-cell">HTML</td>
-                    <td class="table-cell">Expert</td>
-                    <td class="table-cell">3 ans</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-cell">CSS</td>
-                    <td class="table-cell">Avancé</td>
-                    <td class="table-cell">3 ans</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-cell">JavaScript</td>
-                    <td class="table-cell">Intermédiaire</td>
-                    <td class="table-cell">2 ans</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-cell">React</td>
-                    <td class="table-cell">Débutant</td>
-                    <td class="table-cell">1 an</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <hr>
-
-    
-    <section id="resume" class="resume-section">
-        <h2 class="section-title">Mon parcours</h2>
-        
-        <div class="resume-content">
-            <div class="experience-item">
-                <h3 class="experience-title">Développeur Web - Tech Solutions</h3>
-                <p class="experience-date">2022 - Présent</p>
-                <ul class="experience-tasks">
-                    <li class="task-item">Développement d'applications web</li>
-                    <li class="task-item">Correction de bugs</li>
-                    <li class="task-item">Réunions clients</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <h3 class="experience-title">Stagiaire - Web Agency</h3>
-                <p class="experience-date">2021 - 2022</p>
-                <ul class="experience-tasks">
-                    <li class="task-item">Intégration de maquettes</li>
-                    <li class="task-item">Tests de sites</li>
-                    <li class="task-item">Maintenance</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <h3 class="experience-title">Formation - Développeur Web</h3>
-                <p class="experience-date">2020 - 2021</p>
-                <ul class="experience-tasks">
-                    <li class="task-item">HTML/CSS</li>
-                    <li class="task-item">JavaScript</li>
-                    <li class="task-item">Projets pratiques</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <hr>
-
-   
-    <section class="media-section">
-        <h2 class="section-title">Médias</h2>
-        
-       
-        <div class="audio-container">
-            <h3 class="media-title">Présentation audio</h3>
-            <audio controls class="audio-player">
-                <source src="presentation.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas l'audio.
-            </audio>
-            <p class="audio-note">Ma présentation en audio</p>
-        </div>
-        
-        <br>
-        
-        
-        <div class="video-container">
-            <h3 class="media-title">Vidéo de démonstration</h3>
-            <video width="400" controls class="video-player">
-                <source src="demo.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la vidéo.
-            </video>
-            <p class="video-note">Démonstration de mon travail</p>
-        </div>
-        
-      
-        <div class="youtube-container">
-            <h3 class="media-title">Vidéo YouTube</h3>
-            <iframe width="400" height="225" src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="youtube-video"></iframe>
-            <p class="youtube-note">Exemple d'intégration YouTube</p>
-        </div>
-    </section>
-
-    <hr>
-
-    
-    <section id="contact" class="contact-section">
-        <h2 class="section-title">Contactez-moi</h2>
-        
-        <form class="contact-form" action="#" method="post">
-            
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
             <div class="form-group">
-                <label for="fullname" class="form-label">Nom complet :</label>
-                <input type="text" id="fullname" name="fullname" class="form-input" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
             </div>
             
             <div class="form-group">
-                <label for="email" class="form-label">Email :</label>
-                <input type="email" id="email" name="email" class="form-input" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
             </div>
             
             <div class="form-group">
-                <label for="phone" class="form-label">Téléphone :</label>
-                <input type="tel" id="phone" name="phone" class="form-input">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
             </div>
             
             <div class="form-group">
-                <label for="subject" class="form-label">Sujet :</label>
-                <select id="subject" name="subject" class="form-input">
-                    <option value="projet" class="option-item">Proposition de projet</option>
-                    <option value="emploi" class="option-item">Opportunité d'emploi</option>
-                    <option value="stage" class="option-item">Demande de stage</option>
-                    <option value="autre" class="option-item">Autre</option>
+                <label for="service">Service Interested In:</label>
+                <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="ui-design">UI/UX Design</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="other">Other</option>
                 </select>
             </div>
             
             <div class="form-group">
-                <label class="form-label">Type de contact :</label>
-                <div class="radio-group">
-                    <label class="radio-label">
-                        <input type="radio" name="contact-type" value="professionnel" class="radio-input"> Professionnel
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="contact-type" value="personnel" class="radio-input"> Personnel
-                    </label>
-                </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
             </div>
             
-            <div class="form-group">
-                <label for="message" class="form-label">Message :</label>
-                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
-            </div>
-            
-            <div class="form-group">
-                <button type="submit" class="submit-btn">Envoyer</button>
-                <button type="reset" class="reset-btn">Effacer</button>
-            </div>
-            
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
-    <hr>
-
-    
-    <footer class="footer">
+  
+    <footer>
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 Lazher - Tous droits réservés</p>
-            
-            <ul class="footer-links">
-                <li class="footer-item"><a href="#home" class="footer-link">Home</a></li>
-                <li class="footer-item"><a href="#about" class="footer-link">About</a></li>
-                <li class="footer-item"><a href="#work" class="footer-link">Work</a></li>
-                <li class="footer-item"><a href="#resume" class="footer-link">Resume</a></li>
-                <li class="footer-item"><a href="#contact" class="footer-link">Contact</a></li>
-            </ul>
-            
-            <div class="contact-info">
-                <p class="info-item">Email : <span class="info-value">lazher@email.com</span></p>
-                <p class="info-item">Téléphone : <span class="info-value">+216 12 345 678</span></p>
-                <p class="info-item">Adresse : <span class="info-value">Tunis, Tunisie</span></p>
-            </div>
-            
-            <p class="footer-note">Merci de votre visite !</p>
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p>Follow me on social media</p>
         </div>
     </footer>
 
 </body>
+
 </html>
