@@ -1,9 +1,9 @@
-/* style.css - External CSS for Portfolio */
 
-/* Import Google Fonts */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Reset and base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header and Navigation */
+
 header {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
@@ -65,14 +65,14 @@ nav ul li a:hover::after {
     width: 80%;
 }
 
-/* Main content */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* Sections */
+
 section {
     background: white;
     border-radius: 20px;
@@ -86,7 +86,7 @@ section:hover {
     transform: translateY(-5px);
 }
 
-/* Section titles */
+
 h1 {
     font-size: 2.5rem;
     color: #333;
@@ -129,7 +129,7 @@ h3 {
     margin: 1.5rem 0 1rem;
 }
 
-/* Home section */
+
 #home {
     text-align: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -153,7 +153,7 @@ h3 {
     margin: 1rem auto;
 }
 
-/* About section */
+
 #about ul {
     list-style: none;
     display: grid;
@@ -197,7 +197,7 @@ h3 {
     color: #666;
 }
 
-/* Work section */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -252,7 +252,7 @@ h3 {
     margin-top: 1rem;
 }
 
-/* Resume section */
+
 .resume-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -321,7 +321,7 @@ table tr:hover {
     background: #777;
 }
 
-/* Contact section - Form */
+
 .contact-form {
     background: #f9f9f9;
     padding: 2rem;
@@ -462,7 +462,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     main {
         padding: 1rem;
@@ -512,7 +511,7 @@ footer {
     }
 }
 
-/* Animation for sections */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -528,7 +527,7 @@ section {
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* Custom scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
